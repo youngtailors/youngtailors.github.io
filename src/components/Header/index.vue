@@ -13,8 +13,3 @@ export default {
   },
 }
 </script>
-
-<style lang="stylus">
-#header
-  background-color #0E1F36
-</style>

@@ -1,12 +1,17 @@
 <template>
   <Layout>
-    <div class="container">
-      <h1>We want to say Hello World.</h1>
-      <p>We are developing this website to say more about our team.</p>
-    </div>
+    <block-feature />
+    <block-our-services />
   </Layout>
 </template>
 
 <script>
-export default {}
+import BlockFeature from '~/components/BlockFeature'
+import BlockOurServices from '~/components/BlockOurServices'
+export default {
+  components: {
+    BlockFeature,
+    BlockOurServices,
+  },
+}
 </script>
