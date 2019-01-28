@@ -2,8 +2,8 @@
   <div class="container">
     <div class="row">
       <div class="col-6">
-        <h1>Passionate youth love to develop products</h1>
-        <p>Enthusiasm and precise on every steps ò product development make us different.</p>
+        <h1>{{ feature.title }}</h1>
+        <p>{{ feature.description }}</p>
         <a href="#">See our works</a>
       </div>
       <div class="col-6">
@@ -12,3 +12,11 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    feature: Object,
+  },
+}
+</script>

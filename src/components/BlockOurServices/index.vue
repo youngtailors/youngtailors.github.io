@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <block-title headline="Our Services" title="Professional software development that translates your ideas to a working product." />
-    <services />
+    <services :services="services" />
   </div>
 </template>
 
@@ -13,6 +13,9 @@ export default {
   components: {
     BlockTitle,
     Services,
+  },
+  props: {
+    services: Array,
   },
 }
 </script>

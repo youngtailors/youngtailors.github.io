@@ -1,7 +1,7 @@
 <template>
   <div>
-    <div v-if="service.iconUrl">
-      <g-image :src="service.iconUrl" />
+    <div v-if="service.img">
+      <g-image :src="service.img" />
     </div>
     <h3 v-if="service.title">
       {{ service.title }}
@@ -16,7 +16,7 @@
 export default {
   props: {
     service: {
-      iconUrl: String,
+      img: String,
       title: String,
       description: String,
     },
