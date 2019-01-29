@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <block-feature :feature="$page.content.feature" />
-    <block-our-services :services="$page.content.ourServices" />
+    <block-our-services :services="$page.content.ourServices" :partnerships="$page.content.partnerships" />
   </Layout>
 </template>
 
@@ -16,6 +16,15 @@ query Content {
     feature {
       title
       description
+    }
+    partnerships {
+      title
+      partners {
+        title
+        description
+        logo (width: 70)
+        field
+      }
     }
   }
 }

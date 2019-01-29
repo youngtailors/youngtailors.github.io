@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <h2 v-if="headline">{{ headline }}</h2>
-    <h3 v-if="title">{{ title }}</h3>
+  <div class="block-title">
+    <h4 class="headline" v-if="headline">{{ headline }}</h4>
+    <h3 class="title" v-if="title">{{ title }}</h3>
   </div>
 </template>
 
@@ -13,3 +13,11 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+.block-title
+  margin-bottom 2rem
+  .headline
+    text-transform uppercase
+    font-weight 400
+</style>

@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <div v-if="service.img">
+  <div class="service">
+    <div class="icon" v-if="service.img">
       <g-image :src="service.img" />
     </div>
-    <h3 v-if="service.title">
+    <h3 class="title" v-if="service.title">
       {{ service.title }}
     </h3>
     <p v-if="service.description">
@@ -23,3 +23,11 @@ export default {
   },
 }
 </script>
+
+<style lang="stylus">
+.service
+  .icon
+    margin-bottom 1rem
+  .title
+    margin-bottom 1rem
+</style>
